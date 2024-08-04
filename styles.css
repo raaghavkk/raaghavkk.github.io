@@ -1,0 +1,73 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a modern font */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Add a modern color scheme */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+}
+
+/* Add modern styles to the header */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Add modern styles to the main content */
+main {
+    padding: 20px;
+}
+
+/* Add modern styles to links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add modern styles to buttons */
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Add modern styles to forms */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+/* Add modern styles to images */
+img {
+    max-width: 100%;
+    height: auto;
+}
