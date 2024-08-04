@@ -22,52 +22,65 @@ header {
     background-color: var(--primary-color);
     color: #fff;
     padding: 20px;
+    margin-bottom: 20px; /* Add margin to space out the heading */
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
 }
 
 header h1 {
     font-size: 24px;
     font-weight: bold;
+    margin-right: 20px; /* Add margin to space out the heading */
 }
 
-/* Add modern styles to the main content */
-main {
-    padding: 20px;
-}
-
-/* Add modern styles to links */
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Add modern styles to buttons */
-button {
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
+/* Make hyperlinks at the top of the webpage look like clear buttons */
+header a {
+    display: inline-block;
     padding: 10px 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--secondary-color);
-}
-
-/* Add modern styles to forms */
-input[type="text"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
     border-radius: 4px;
+    text-decoration: none;
+    margin-right: 10px; /* Add margin to space out the hyperlinks */
 }
 
-/* Add modern styles to images */
-img {
-    max-width: 100%;
-    height: auto;
+header a:last-child {
+    margin-right: 0; /* Remove margin from the last hyperlink */
+}
+
+/* Change color of hyperlinks at the top of the webpage on hover */
+header a:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 10px; /* Add margin to space out the hyperlinks */
+}
+
+nav a:last-child {
+    margin-right: 0; /* Remove margin from the last hyperlink */
+}
+
+/* Change color of hyperlinks in the navigation on hover */
+nav a:hover {
+    background-color: yellow;
+    color: blue;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
 }
